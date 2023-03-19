@@ -21,4 +21,4 @@ RUN apt update && apt install -y --no-install-recommends \
 
 COPY --from=build /build/strfry strfry
 ENTRYPOINT ["/app/strfry"]
-CMD ["relay", "--config", "./strfry.conf"]
+CMD ["relay", "-config", "./strfry.conf"]
