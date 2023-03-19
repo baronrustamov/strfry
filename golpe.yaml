@@ -118,11 +118,11 @@ config:
 
   - name: relay__bind
     desc: "Interface to listen on. Use 0.0.0.0 to listen on all interfaces"
-    default: "127.0.0.1"
+    default: "0.0.0.0"
     noReload: true
   - name: relay__port
     desc: "Port to open for the nostr websocket protocol"
-    default: 7777
+    default: 7377
     noReload: true
   - name: relay__nofiles
     desc: "Set OS-limit on maximum number of open files/sockets (if 0, don't attempt to set)"
