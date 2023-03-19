@@ -122,7 +122,7 @@ config:
     noReload: true
   - name: relay__port
     desc: "Port to open for the nostr websocket protocol"
-    default: 7377
+    default: 7777
     noReload: true
   - name: relay__nofiles
     desc: "Set OS-limit on maximum number of open files/sockets (if 0, don't attempt to set)"
@@ -134,13 +134,13 @@ config:
 
   - name: relay__info__name
     desc: "NIP-11: Name of this server. Short/descriptive (< 30 characters)"
-    default: "strfry default"
+    default: "Semaphore"
   - name: relay__info__description
     desc: "NIP-11: Detailed information about relay, free-form"
-    default: "This is a strfry instance."
+    default: "This is a Semaphore strfry instance."
   - name: relay__info__pubkey
     desc: "NIP-11: Administrative nostr pubkey, for contact purposes"
-    default: "unset"
+    default: "npub1m6az5zc2c5hzalker52x7zkzht6qs6yvj9l4pyjgvw9welfaf7yqz6mlgn"
   - name: relay__info__contact
     desc: "NIP-11: Alternative administrative contact (email, website, etc)"
     default: "unset"
@@ -155,7 +155,7 @@ config:
     noReload: true
   - name: relay__enableTcpKeepalive
     desc: "If TCP keep-alive should be enabled (detect dropped connections to upstream reverse proxy)"
-    default: false
+    default: true
   - name: relay__queryTimesliceBudgetMicroseconds
     desc: "How much uninterrupted CPU time a REQ query should get during its DB scan"
     default: 10000
